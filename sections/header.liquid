@@ -1,11 +1,5 @@
-{% stylesheet %}
-    .main-in {
-       
-    }
-{% endstylesheet %}
 
-
-<div class="relative bg-black main-in">
+<div class="relative bg-yellow-400">
     <div class="mx-auto px-4 sm:px-6">
         <div class="flex justify-center items-center py-6 md:justify-start md:space-x-10">
 
@@ -21,9 +15,11 @@
 
                     {% if link.links != blank %}
                         <div class="relative">
+                            <!-- for dropdown -->
                             <button class="inline-flex items-center">
                                 {{link.title}}
                                 {% render 'icon-dropdown' %}
+                                
                             </button>
                         </div>
                         {% else %}
